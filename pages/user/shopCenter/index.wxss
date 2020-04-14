@@ -1,0 +1,83 @@
+/* pages/user/shopCenter/index.wxss */
+
+page{
+  height: 100%;
+}
+.shopInfo{
+  background: #fefefe;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.shopName{
+  font-size: 34rpx;
+  font-weight: bolder;
+}
+.shopTop{
+  height: 120rpx;
+  flex: 0 0 120rpx;
+  display: flex;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.shopTop image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.topLeft{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.topRight{
+  flex: 0 0 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopJianjie{
+  font-size: 24rpx;
+  color: #999;
+  height: 60rpx;
+  flex: 0 0 60rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.tabList{
+  height: 90rpx;
+  flex: 0 0 90rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #fafafa;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.tab{
+  position: relative;
+  flex: 1;
+  text-align: center;
+  color: #666;
+}
+.active{
+  color: #333;
+}
+.active:after{
+  position: absolute;
+  left: 50%;
+  bottom: -6rpx;
+  margin-left: -30rpx;
+  content: '';
+  display: block;
+  width: 60rpx;
+  height: 4rpx;
+  background: #1296db;
+}
+.main{
+  flex: 1;
+  height: calc(100% - 120rpx - 90rpx - 60rpx)
+}
+.hide{
+  display: none;
+}

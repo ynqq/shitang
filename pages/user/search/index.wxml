@@ -1,0 +1,28 @@
+<view class="search">
+  <view class="searchBox">
+    <input focus="{{true}}" confirm-type="search" bindconfirm="handleCoonfirm" placeholder="请输入内容"></input>
+    <view class="sousuo">搜索</view>
+  </view>
+  <view class="scrollList">
+    <scroll-view scroll-y style="height:100%;">
+      <view class="tuijianItem" wx:for="{{[1,2,3,4,5,6,6,7]}}" wx:key="*this" bindtap="toInfo">
+        <view class="itemLeft">
+          <image src="/static/img/demo.jpg"></image>
+        </view>
+        <view class="itemRight">
+          <view class="shopName">碗留香黄焖鸡米饭（荣祥店）焖鸡米焖鸡米</view>
+          <view class="pinglun">
+            <view class="star">
+              <image src="/static/img/star.png"></image>
+              <text>4.7</text>
+            </view>
+            <view class="nums">月销1234</view>
+          </view>
+          <view class="shopInfo">
+            商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

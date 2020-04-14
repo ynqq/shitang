@@ -1,0 +1,61 @@
+/* pages/shop/my/index.wxss */
+page{
+  background: #efefef;
+}
+.user{
+
+}
+
+.header{
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  background: #fff;
+  align-items: center;
+
+}
+.headerLeft{
+  width: 120rpx;
+  flex: 0 0 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.headerRight{
+  flex: 1;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+
+}
+.menuList{
+  margin-top: 20rpx;
+  background: #fff;
+  color: #8a8a8a;
+}
+.menuItem{
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40rpx;
+  border-bottom: 2rpx solid #fafafa;
+}
+.menuItem:last-child{
+  border: 0
+}
+.itemLeft{
+  flex: 1;
+}
+.itemRight{
+  width: 120rpx;
+  flex: 0 0 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.itemRight image{
+  width: 30rpx;
+  height: 30rpx;
+}

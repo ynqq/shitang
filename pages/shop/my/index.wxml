@@ -1,0 +1,20 @@
+<view class="user">
+  <view class="header">
+    <view class="headerLeft">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="headerRight">
+      商家名称商家名称商家名称商家名称商家名称
+    </view>
+  </view>
+  <view class="menuList">
+    <view class="menuItem" wx:for="{{list}}" wx:key="index" bindtap="handle" data-index="{{index}}">
+      <view class="itemLeft">{{item.text}}</view>
+      <view class="itemRight">
+      <image src="/static/img/xiangyou.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<tab-bar showIndex="{{1}}"></tab-bar>

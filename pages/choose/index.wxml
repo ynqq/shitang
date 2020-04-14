@@ -1,0 +1,13 @@
+<view>
+  <view class="chooseBox">
+    <view class="title">请选择您的身份</view>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-type="1">
+      商家
+    </button>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-type="2">
+      顾客
+    </button>
+    <view bindtap="toUser">去往用户首页</view>
+    <view bindtap="toShop">去往商家首页</view>
+  </view>
+</view>

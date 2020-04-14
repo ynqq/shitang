@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "shop-info": "/components/shopInfo/index",
+    "shop-PL": "/components/userShopPL/index"
+  },
+  "enablePullDownRefresh": false,
+  "disableScroll": true
+}

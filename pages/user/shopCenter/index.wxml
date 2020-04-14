@@ -1,0 +1,19 @@
+<view class="shopInfo">
+  <view class="shopTop">
+    <view class="topLeft">
+      <view class="shopName">黄焖鸡米饭</view>
+    </view>
+    <view class="topRight">
+      <image src="/static/img/demo.jpg"></image>
+    </view>
+  </view>
+  <view class="shopJianjie">公告:xxxxx</view>
+  <view class="tabList">
+    <view data-index="0" bindtap="handleShow" class="tab {{showType == 0 ? 'active' :''}}">商品</view>
+    <view data-index="1" bindtap="handleShow" class="tab {{showType == 1 ? 'active' :''}}">评论</view>
+  </view>
+  <view class="main">
+    <shop-info class="{{showType == 0 ? '' :'hide'}}"></shop-info>
+    <shop-PL class="{{showType == 1 ? '' :'hide'}}"></shop-PL>
+  </view>
+</view>

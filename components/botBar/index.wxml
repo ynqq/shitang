@@ -1,0 +1,8 @@
+<view class="bottomBox">
+  <view class="bottomBar">
+    <view class="barItem {{index === showIndex ? 'active' : ''}}" wx:for="{{list}}" bindtap="changePage" data-index="{{index}}" wx:key="index">
+      <image src="{{ index === showIndex ?  item.selectIcon : item.icon}}"></image>
+      <view class="text">{{item.text}}</view>
+    </view>
+  </view>
+</view>

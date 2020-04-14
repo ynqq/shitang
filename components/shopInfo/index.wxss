@@ -1,0 +1,223 @@
+/* components/shopInfo/index.wxss */
+.productBox{
+  height: 100%;
+}
+
+.chooseProduct {
+  height: calc(100% - 100rpx);
+  display: flex;
+  background: #efefef;
+  box-sizing: border-box;
+}
+
+.scrollListLeft {
+  height: 100%;
+  flex: 0 0 120rpx;
+  width: 120rpx;
+}
+
+.scrollList {
+  flex: 1;
+  width: calc(100% - 120rpx);
+  height: 100%;
+  background: #fefefe;
+  display: flex;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+}
+
+.scrollListLeft .scrollItem{
+  box-sizing: border-box;
+  padding: 20rpx 10rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.scrollListLeft .scrollItem.active{
+  background: #fff;
+  color: #333;
+}
+
+.scrollList .scrollItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #eee;
+  padding: 20rpx 0
+}
+.productLeft{
+  flex: 0 0 150rpx;
+  width: 150rpx;
+}
+.productLeft image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.productRight{
+  flex: 1;
+  width: calc(100% - 150rpx);
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  font-size: 22rpx;
+  color: #666;
+  padding-right: 20rpx;
+}
+.productName{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bolder;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 48rpx;
+}
+.productInfo{
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 38rpx;
+}
+.mai{
+  display: flex;
+
+}
+.good{
+  margin-left: 10rpx;
+}
+
+.priceBox{
+  display: flex;
+  margin-top: 20rpx;
+}
+.proPrice{
+  flex:1;
+  color: rgb(243, 76, 76);
+  font-size: 28rpx;
+}
+.settingBox{
+  display: flex;
+}
+.jian,.jia{
+  width: 40rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.jian image, .jia image{
+  width: 100%;
+  height: 100%;
+}
+.nums{
+  width: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productFooter{
+  position: relative;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #999;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  z-index: 20;
+  overflow: hidden;
+}
+.footerPrice{
+  color: #fff;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.toPay{
+  width: 150rpx;
+  height: 80rpx;
+  color: #fff;
+  background: #1296db;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.car{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car image{
+  width: 70%;
+  height: 70%
+}
+.moneyNum{
+  margin-left: 30rpx;
+}
+.modalBg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .3);
+  z-index: 1
+}
+.modal{
+  position: fixed;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 800rpx;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 10;
+  padding: 0 20rpx 100rpx;
+  transition: all .3s linear;
+}
+.modalList{
+  height: calc(100% - 80rpx);
+}
+.modalItem{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  align-items: center;
+  border-bottom: 2rpx solid #efefef;
+}
+.modalItem>.chooseName{
+  flex: 1;
+  width: calc(100% - 160rpx - 160rpx);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.modalItem>.choosePrice{
+  flex: 0 0 160rpx;
+  text-align: center;
+}
+.modalItem>.settingBox{
+  flex: 0 0 160rpx;
+}
+.modalTitle{
+  height: 80rpx;
+  border-bottom: 2rpx solid #efefef;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+}
+
+.hide{
+  display: none;
+}
+.showModal{
+  bottom: 0;
+}

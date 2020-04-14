@@ -1,0 +1,75 @@
+<view class="productBox">
+  <view class="chooseProduct">
+    <scroll-view scroll-y class="scrollListLeft">
+      <view class="scrollItem {{showIndex == index ? 'active' : ''}}" wx:for="{{[1,2,3,2,2,2,2,2]}}" wx:key="*this">炸鸡
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y class="scrollList">
+      <view class="scrollItem" wx:for="{{[1,2,3,2,2,2,2,2]}}" wx:key="*this">
+        <view class="productLeft">
+          <image src="/static/img/demo.jpg"></image>
+        </view>
+        <view class="productRight">
+          <view class="productName">产品名产品名产品名产品名产品名产品名产品名产品名产品名产品名</view>
+          <view class="productInfo">
+            产品介绍产品介绍产品介绍产品介绍产品介绍产品介绍
+          </view>
+          <view class="mai">
+            <view class="xiaoshou">月售500份</view>
+            <view class="good">好评率100%</view>
+          </view>
+          <view class="priceBox">
+            <view class="proPrice">￥23.92</view>
+            <view class="settingBox">
+              <view class="jian">
+                <image src="/static/img/jian.png"></image>
+              </view>
+              <view class="nums">
+                <text>0</text>
+              </view>
+              <view class="jia">
+                <image src="/static/img/jia.png"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="productFooter">
+    <view class="footerPrice">
+      <view class="car" bindtap="handleModal">
+        <image src="/static/img/car.png"></image>
+      </view>
+      <view class="moneyNum">总计: ￥500</view>
+    </view>
+    <view class="toPay">去结算</view>
+  </view>
+ 
+  <view class="modal {{showModal ? 'showModal' : ''}}">
+    <view class="modalTitle">
+      <view>已选商品</view>
+      <view class="clearProduct">清空</view>
+    </view>
+    <view class="modalList">
+      <scroll-view scroll-y style="height:100%">
+        <view class="modalItem" wx:for="{{[1,2,3,2,2,2,2,2,2,2,2,22]}}" wx:key="*this">
+          <view class="chooseName">选择的商商品</view>
+          <view class="choosePrice">￥30.00</view>
+          <view class="settingBox">
+            <view class="jian">
+              <image src="/static/img/jian.png"></image>
+            </view>
+            <view class="nums">
+              <text>0</text>
+            </view>
+            <view class="jia">
+              <image src="/static/img/jia.png"></image>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
+<view class="modalBg {{showModal ? '' : 'hide'}}" bindtap="handleModal"></view>

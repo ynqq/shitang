@@ -1,0 +1,44 @@
+<view class="index">
+  <view class="top">
+    <view class="searchBox" bindtap="toSearch">
+      <view class="inputText">搜索商家，商品名称</view>
+    </view>
+    <view class="saoma" bindtap="scan">
+      <image src="/static/img/saoma.png"></image>
+    </view>
+  </view>
+  <view class="swiper">
+    <swiper indicator-dots autoplay interval="{{3000}}" duration="{{600}}" circular="{{true}}">
+      <block wx:for="{{picList}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item.src}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="tuijian">
+    <view class="tuijianTitle">推荐商家</view>
+    <view class="tuijianList">
+      <view class="tuijianItem" wx:for="{{shopList}}" wx:key="*this" bindtap="toInfo">
+        <view class="itemLeft">
+          <image src="/static/img/demo.jpg"></image>
+        </view>
+        <view class="itemRight">
+          <view class="shopName">碗留香黄焖鸡米饭（荣祥店）焖鸡米焖鸡米</view>
+          <view class="pinglun">
+            <view class="star">
+              <image src="/static/img/star.png"></image>
+              <text>4.7</text>
+            </view>
+            <view class="nums">月销1234</view>
+          </view>
+          <view class="shopInfo">
+            商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，商家简介，
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<tab-bar></tab-bar>
