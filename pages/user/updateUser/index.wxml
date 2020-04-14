@@ -1,0 +1,15 @@
+<view class="updateInfo">
+    <view class="updateItem">
+        <view class="updateLabel">用户名:</view>
+        <view class="updateValue">
+            <input></input>
+        </view>
+    </view>
+    <view class="updateItem">
+        <view class="updateLabel">手机号:</view>
+        <view class="updateValue">
+            <input></input>
+        </view>
+    </view>
+</view>
+<view class="submit">提交</view>

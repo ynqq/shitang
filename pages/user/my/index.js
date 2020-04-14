@@ -8,16 +8,20 @@ Page({
     list: [
       {
         text: "修改个人信息",
-        path: ""
+        path: "/pages/user/updateUser/index"
       },
       {
         text: "我的评价",
-        path: ""
+        path: "/pages/user/wodepingjia/index"
       }
     ]
   },
   handle(item) {
     console.warn(item)
+    let url = this.data.list[item.currentTarget.dataset.index].path
+    wx.navigateTo({
+      url: url,
+    })
   },
 
   /**

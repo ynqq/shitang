@@ -8,20 +8,24 @@ Page({
     list:[
       {
         text: "修改商家信息",
-        path: ""
+        path: "/pages/shop/updateInfo/index"
       },
       {
         text: "菜品分类管理",
-        path: ""
+        path: "/pages/shop/classManager/index"
       },
       {
         text: "菜品信息管理",
-        path: ""
+        path: "/pages/shop/productManager/index"
       },
     ]
   },
   handle(item){
     console.warn(item)
+    let url = this.data.list[item.currentTarget.dataset.index].path
+    wx.navigateTo({
+      url: url,
+    })
   },
 
   /**

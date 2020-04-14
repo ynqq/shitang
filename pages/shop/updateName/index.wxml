@@ -1,0 +1,4 @@
+<view class="pl">
+  <input focus="{{true}}" placeholder="请输入内容"></input>
+  <view class="submit">提交</view>
+</view>

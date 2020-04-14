@@ -1,5 +1,5 @@
 <view class="orderList">
-  <view class="orderItem" wx:for="{{[1,2,3,4]}}" wx:key="*this">
+  <view class="orderItem" wx:for="{{[1,2,3,4]}}" wx:key="*this" bindtap="toInfo">
     <view class="orderLeft">
       <image src="/static/img/demo.jpg"></image>
     </view>

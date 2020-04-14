@@ -1,3 +1,26 @@
-<!--pages/shop/order/index.wxml-->
-<text>pages/shop/order/index.wxml</text>
-<tab-bar></tab-bar>
+<view class="orderList">
+  <view class="orderItem" wx:for="{{[1,2,3,4]}}" wx:key="*this" bindtap="toInfo">
+    <view class="orderLeft">
+      <image src="/static/img/demo.jpg"></image>
+    </view>
+    <view class="orderRight">
+      <view class="rightTop">
+        <view class="shopName">
+          <view class="textname">商家名称商家名称商家名称商家名称商家名称</view>
+          <view class="time">2020-04-06 17:16</view>
+        </view>
+        <view class="shopState state1">
+          <text>订单已送达</text>
+        </view>
+      </view>
+      <view class="rightBottom">
+        <view class="productInfo">买的东西等n件商品</view>
+        <view class="price">￥24.1</view>
+      </view>
+      <!-- <view class="pingjia" bindtap="toPL">
+        <view class="btnPj">评价</view>
+      </view> -->
+    </view>
+  </view>
+</view>
+<tab-bar showIndex="{{0}}"></tab-bar>

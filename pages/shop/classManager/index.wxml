@@ -1,0 +1,53 @@
+<view class="stay_top">
+	<view class="edit_row edit_row_title">
+		<view class="edit_col1">
+			<view class="edit_title_col1">删除</view>
+		</view>
+		<view class="edit_col2">
+			<view class="placeholder"></view>
+		</view>
+		<view class="edit_col3">修改</view>
+		<view class="edit_col4">排序</view>
+	</view>
+</view>
+<view style="position: relative; z-index: 199;">
+	<view class="touchView" style="height:{{scrollPosition.scrollViewHeight}}px;" catchtouchstart="draggleTouch" catchtouchmove="draggleTouch" catchtouchend="draggleTouch">
+	</view>
+	<movable-area class="moveable_row {{movableViewPosition.className}}" style="height: {{scrollPosition.scrollViewHeight}}px;">
+		<movable-view style="height: {{scrollPosition.everyOptionCell}}px; width: 100%; background-color: #fff;" direction="vertical" x="{{movableViewPosition.x}}" y="{{movableViewPosition.y}}" inertia="false" damping="9999" friction="9999">
+			<view class="edit_row ">
+				<view class="edit_col1" data-seccode="{{movableViewPosition.data.code}}" bindtap="selectOption">
+					<view class="ico_delete"></view>
+				</view>
+				<view class="edit_col2">
+					<view class="secname">{{movableViewPosition.data.name}}</view>
+				</view>
+				<view class="edit_col3" data-seccode="{{movableViewPosition.data.code}}" bindtap="putOptionTop">
+					<view class="ico_stay_top"></view>
+				</view>
+				<view class="edit_col4" data-seccode="{{movableViewPosition.data.code}}">
+					<view class="ico_drag"></view>
+				</view>
+			</view>
+		</movable-view>
+	</movable-area>
+	<scroll-view class="edit_row_holder" scroll-y="{{scrollPosition.scrollY}}" style="height: {{scrollPosition.scrollViewHeight}}px;" bindscroll="bindscroll">
+		<block wx:for="{{optionsListData}}" wx:key="index">
+			<view class="edit_row  {{item.selectClass}}">
+				<view class="edit_col1" data-seccode="{{item.code}}" bindtap="deleteOption">
+					<view class="ico_delete"></view>
+				</view>
+				<view class="edit_col2">
+					<view class="secname">{{item.name}}{{index}}</view>
+				</view>
+				<view class="edit_col3" data-seccode="{{item.code}}" bindtap="putOptionTop">
+					<view class="ico_stay_top"></view>
+				</view>
+				<view class="edit_col4" data-seccode="{{item.code}}">
+					<view class="ico_drag"></view>
+				</view>
+			</view>
+		</block>
+        <view class="add" bindtap="toAdd">新增</view>
+	</scroll-view>
+</view>

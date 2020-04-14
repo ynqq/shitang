@@ -1,0 +1,33 @@
+<view class="updateInfo">
+	<view class="updateItem">
+		<view class="updateLabel">菜品名:</view>
+		<view class="updateValue">
+			<input placeholder="请输入菜品名"></input>
+		</view>
+	</view>
+	<view class="updateItem">
+		<view class="updateLabel">库存:</view>
+		<view class="updateValue">
+			<input placeholder="请输入库存"></input>
+		</view>
+	</view>
+	<view class="updateItem">
+		<view class="updateLabel">菜品简介:</view>
+		<view class="updateValue">
+			<textarea maxlength="-1" placeholder="请输入与菜品简介"></textarea>
+		</view>
+	</view>
+	<view class="updateItem">
+		<view class="updateLabel">菜品图片:</view>
+		<view class="updateValue">
+			<view class="choosePic" >
+            <view class="delete">
+                <image wx:if="{{src != ''}}" bindtap="deletePic" src="/static/img/jian.png"></image>
+            </view>
+				<view class="addPic" bindtap="choosePic" wx:if="{{src == ''}}"></view>
+				<image bindtap="getBigPic" wx:if="{{src != ''}}" src="{{src}}"></image>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="submit">提交</view>

@@ -1,47 +1,56 @@
 {
-  "pages": [
-    "pages/user/index/index",
-    "pages/loading/index",
-    "pages/user/pl/index",
-    "pages/user/search/index",
-    "pages/user/my/index",
-    "pages/user/shopCenter/index",
-    "pages/user/order/index",
-    "pages/shop/my/index",
-    "pages/shop/order/index",
-    "pages/choose/index",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/registered/shopReg/index",
-    "pages/registered/userReg/index",
-    "pages/registered/index",
-    "pages/registered/shopBind/index"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#1296db",
-    "navigationBarTitleText": "点餐",
-    "navigationBarTextStyle": "white"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/shop/order/index"
-      },
-      {
-        "pagePath": "pages/shop/my/index"
-      },
-      {
-        "pagePath": "pages/user/index/index"
-      },
-      {
-        "pagePath": "pages/user/order/index"
-      },
-      {
-        "pagePath": "pages/user/my/index"
-      }
-    ]
-  }
+    "pages": [
+        "pages/loading/index",
+        "pages/user/index/index",
+        "pages/user/my/index",
+        "pages/shop/order/index",
+        "pages/shop/addProduct/index",
+        "pages/shop/productManager/index",
+        "pages/shop/classManager/index",
+        "pages/shop/my/index",
+        "pages/user/wodepingjia/index",
+        "pages/user/updateUser/index",
+        "pages/user/orderInfo/index",
+        "pages/user/pl/index",
+        "pages/user/search/index",
+        "pages/user/shopCenter/index",
+        "pages/user/order/index",
+        "pages/choose/index",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/registered/shopReg/index",
+        "pages/registered/userReg/index",
+        "pages/registered/index",
+        "pages/registered/shopBind/index",
+        "pages/shop/updateInfo/index",
+        "pages/shop/updateName/index",
+        "pages/shop/updateProduct/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1296db",
+        "navigationBarTitleText": "点餐",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/shop/order/index"
+            },
+            {
+                "pagePath": "pages/shop/my/index"
+            },
+            {
+                "pagePath": "pages/user/index/index"
+            },
+            {
+                "pagePath": "pages/user/order/index"
+            },
+            {
+                "pagePath": "pages/user/my/index"
+            }
+        ]
+    }
 }

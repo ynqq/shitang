@@ -1,0 +1,38 @@
+<view class="orderInfo">
+	<view class="orderState">订单已送达</view>
+	<view class="shopInfo">
+		<view class="shopName" bindtap="toShop">
+			<view class="shopLogo">
+				<image src="/static/img/demo.jpg"></image>
+			</view>
+			<view class="shopText">黄焖鸡米饭</view>
+			<view class="shopIcon">
+				<image src="/static/img/xiangyou.png"></image>
+			</view>
+		</view>
+		<view class="shopList">
+			<view class="shopItem" wx:for="{{[1,2,2,2,2,2]}}" wx:key="*this">
+				<view class="productName">微辣黄焖鸡加米饭</view>
+				<view class="productNum">×1</view>
+				<view class="productPrice">￥50</view>
+			</view>
+		</view>
+	</view>
+    <view class="order">
+        <view class="orderTitle">订单信息</view>
+        <view class="orderList">
+            <view class="orderItem">
+                <view class="orderLabel">下单人</view>
+                <view class="orderValue">名字</view>
+            </view>
+            <view class="orderItem">
+                <view class="orderLabel">订单号</view>
+                <view class="orderValue">111111111</view>
+            </view>
+            <view class="orderItem">
+                <view class="orderLabel">下单时间</view>
+                <view class="orderValue">2020-20-20</view>
+            </view>
+        </view>
+    </view>
+</view>

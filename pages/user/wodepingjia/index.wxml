@@ -1,0 +1,23 @@
+<view class="PL">
+  <scroll-view scroll-y class="plList">
+    <view class="plItem" wx:for="{{[1,2,3,2,2,2,2,2,2,2,2,22]}}" wx:key="*this">
+      <view class="plTop">
+        <view class="plHead">
+          <image src="/static/img/demo.jpg"></image>
+        </view>
+        <view class="plUser">
+          <view class="plName">4********2</view>
+          <view class="plTime">2020-05-20</view>
+        </view>
+      </view>
+      <view class="plCenter">
+        评论内容
+      </view>
+      <view class="plPicList">
+        <image src="/static/img/demo.jpg"></image>
+        <image src="/static/img/demo.jpg"></image>
+        <image src="/static/img/demo.jpg"></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,74 @@
+/* pages/shop/productManager/index.wxss */
+page{
+    height: 100%;
+}
+.topMenu{
+    width: 100%;
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-bottom: 2rpx solid #efefef;
+}
+.add{
+    color: rgb(83, 167, 247);
+    width: 100rpx;
+    text-align: center;
+}
+.productList{
+    height: calc(100% - 60rpx);
+}
+.productItem{
+    padding: 20rpx 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid #fafafa;
+    height: 140rpx;
+}
+.productItem:last-child{
+    border: 0;
+}
+.left{
+    flex: 0 0 100rpx;
+    width: 100rpx;
+}
+.left image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 10rpx;
+}
+.center{
+    flex: 1;
+    width: calc(100% - 100rpx - 100rpx);
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+.center view{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info{
+    font-size: 26rpx;
+    color: #666;
+}
+.right{
+    flex: 0 0 100rpx;
+    width: 100rpx;
+    font-size: 24rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.delete{
+    color: rgb(243, 73, 73);
+}
+.update{
+    color: rgb(253, 183, 53);
+}

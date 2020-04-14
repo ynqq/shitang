@@ -1,0 +1,21 @@
+<view class="topMenu">
+	<view>菜品管理</view>
+	<view class="add">新增</view>
+</view>
+<view class="productList">
+	<scroll-view scroll-y style="height:100%">
+		<view class="productItem" wx:for="{{[1,2,2,2,2,1,2,2,1,1,1,1,1,1,1]}}" wx:key="*this">
+			<view class="left">
+				<image src="/static/img/demo.jpg"></image>
+			</view>
+			<view class="center">
+				<view class="name">名称123123</view>
+				<view class="info">介绍12312312介绍12312312介绍12312312介绍12312312介绍12312312</view>
+			</view>
+			<view class="right">
+				<view class="delete">删除</view>
+				<view class="update">修改</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

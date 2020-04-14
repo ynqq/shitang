@@ -1,0 +1,104 @@
+/* pages/user/orderInfo/index.wxss */
+page {
+    background-color: #efefef;
+}
+
+.orderInfo {
+    box-sizing: border-box;
+}
+
+.orderState {
+    padding: 0 20rpx;
+    font-size: 36rpx;
+    background-color: #fff;
+    line-height: 100rpx;
+    margin-bottom: 10rpx;
+    box-sizing: border-box;
+}
+
+.shopInfo {
+    padding: 0 20rpx;
+    background-color: #fff;
+}
+.shopName{
+    height: 70rpx;
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid #ddd;
+    box-sizing: border-box;
+}
+.shopLogo{
+    flex: 0 0 30rpx;
+}
+.shopLogo image{
+    width: 28rpx;
+    height: 28rpx;
+}
+.shopIcon{
+    flex: 0 0 30rpx;
+}
+.shopIcon image{
+    width: 28rpx;
+    height: 28rpx;
+}
+.shopText{
+    flex: 1;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+.shopList{
+    padding: 20rpx 0;
+    width: 100%;
+}
+.shopItem{
+    display: flex;
+    width: 100%;
+    height: 60rpx;
+    align-items: center;
+    border-bottom: 2rpx solid #fafafa;
+}
+.productName{
+    flex: 1;
+    width: calc(100% - 60rpx - 100rpx);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.productNum{
+    flex: 0 0 60rpx;
+    width: 60rpx;
+}
+.productPrice{
+    flex: 0 0 100rpx;
+    width: 100rpx;
+    color: rgb(206, 21, 21);
+}
+
+.order{
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 10rpx;
+}
+.orderTitle{
+    height: 70rpx;
+    font-size: 32rpx;
+    display: flex;
+    align-items: center;
+    border-bottom: 2rpx solid #ddd;
+    box-sizing: border-box;
+}
+.orderList{
+
+}
+.orderItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60rpx;
+    border-bottom: 2rpx solid #fafafa;
+}
+.orderLabel{
+    color: #666;
+}
